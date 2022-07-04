@@ -14,8 +14,9 @@ export class AppComponent {
   users:any;
   constructor(private userData:UserdataService)
   {
-    //calling the function defined in service(userdata)
-    console.warn(userData.users())
+    
+    //console.warn(userData.users())
+    //calling the function defined in service(userdata) and store in users:any
     this.users=userData.users();
 
   }
